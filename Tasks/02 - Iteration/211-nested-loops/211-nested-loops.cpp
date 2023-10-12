@@ -13,7 +13,8 @@ int main()
             printf("\tInner loop number %d\n", j);  // note the use of the tab (\t) option at the start to improve the layout
             
             //Task - Write another level of nesting here
-
+            for (int j = 1; j <= 3; j++)
+                printf("\tInner loop number %d\n", j);
         }
     }
 }
