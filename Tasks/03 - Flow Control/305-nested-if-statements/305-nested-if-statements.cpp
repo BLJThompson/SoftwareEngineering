@@ -31,7 +31,7 @@ int main()
         cin >> level;
     } while ((level < 0) || (level > 100)); //Repeat until a valid number is entered
 
-  
+
     if (level <= low)                       // check the level
     {
         cout << "Tank needs filling ";
@@ -44,7 +44,12 @@ int main()
     }
     else //Ok, it is > low, so do the following.....
     {
-        cout << "Tank has sufficient fuel for now." << endl;
-        // If it is not full, let the user know they could still top it up.
+        cout << "Tank has sufficient fuel for now. ";
+        if (level < 100) {
+            cout << "You could top it up if you wish." << endl;
+        }
+        else {
+            cout << "It is actually full." << endl;
+        }
     }
 }

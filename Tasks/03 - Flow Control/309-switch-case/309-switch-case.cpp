@@ -28,6 +28,32 @@ int main()
         cin >> selection;
     } while ((selection < 0) || (selection > 4)); // Repeat until a valid number is entered
 
+
+    switch (selection)
+    {
+    case 0:
+
+        cout << "9 to 5, Monday to Saturday. 10 to 4 on Sundays and Bank Holidays" << endl;
+        break;
+    case 1:
+        cout << "Redirecting you now" << endl;
+        redirect(100);
+        break;
+    case 2:
+        cout << "Sorry - you will need to come to the store for that." << endl;
+        hangup();
+        break;
+    case 3:
+    case 4:cout << "Redirecting you now" << endl;
+        redirect(220);
+        break;
+    case 5:
+        cerr << "Error - invalided variable" << endl;
+        break;
+
+
+    }
+
     // Mutuallly Exclusive Decision Pathway
     if (selection == 0)
     {

@@ -25,7 +25,7 @@ int main()
 
     //Modify each element of the array
     for (unsigned int n = 0; n < N; n++) {
-        int newValue = nums[n] + 1;             //Read (by de-referencing) and add one    
+        int newValue = nums[n] + 47;             //Read (by de-referencing) and add one    
         nums[n] = newValue;                     //Write into the array (again, using de-referencing)
     }
 
@@ -44,14 +44,24 @@ int main()
 
     //Write task 1 solution here
     int64_t sum = 0L;   //Result needs to be bigger than int to avoid overflow
-
-
+    for (unsigned int n = 0; n < N; n++) {
+        sum += (long)nums[n];
+    }
+    cout << "Sum = " << sum << endl;
+    cout << "All added together = " << sum << endl;
     // ***********************************************************************************************************************
     // TASK 2 - calculate the mean of all elements (this will be a fractional value) and display to 1 decimal place accuracy *
     // ***********************************************************************************************************************
 
     //Write task 2 solution here
+    float mean = (float)sum / (float)N;
 
+    //Write to display - C version
+    printf("Mean = %.10f\n", mean);
+
+    //C++ version - arguably more complex
+    cout.precision(1);
+    cout << "Mean = " << std::fixed << mean;
 }
 
 
