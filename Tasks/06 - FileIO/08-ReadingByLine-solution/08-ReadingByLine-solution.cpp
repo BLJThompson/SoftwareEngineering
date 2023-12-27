@@ -11,7 +11,7 @@ void createFile(string fn);
 int main()
 {
     //Let's create a file for test purposes
-    createFile("myfile.txt");
+    //createFile("myfile.txt");
 
     // (i) Open for read
     string fn = "myfile.txt";

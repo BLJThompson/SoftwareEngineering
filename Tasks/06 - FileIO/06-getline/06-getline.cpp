@@ -11,10 +11,10 @@ void createFile(string fn);
 int main()
 {
     //Let's create a file for test purposes
-    createFile("myfile.txt");
+    createFile("Getline.txt");
 
     // (i) Open for read
-    string fn = "myfile.txt";
+    string fn = "Getline.txt";
     ifstream inputStream;
     inputStream.open(fn);
     if (!inputStream.is_open()) {

@@ -7,6 +7,7 @@ int main()
 {
     //Write to stdout
     cout << "12345" << endl;
+    cout << "WHAT IS THIS" << endl;
     cout << "-----";
 
     //Now the file equivalent.
@@ -23,6 +24,7 @@ int main()
 
     //Write a string to the file - instead of cout, it's `outputStream`
     outputStream << "12345" << endl;
+    outputStream << "WHAT IS THIS" << endl;
     outputStream << "-----" << endl;
 
     //Close

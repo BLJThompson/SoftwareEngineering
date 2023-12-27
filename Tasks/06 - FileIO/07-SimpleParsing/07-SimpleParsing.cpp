@@ -10,7 +10,7 @@ void createFile(string fn);
 int main()
 {
     // Test file
-    createFile("myfile.txt");
+    //createFile("myfile.txt");
 
 
     // (i) Open for write
@@ -31,7 +31,7 @@ int main()
 
     // (ii) Read word-by-word (separated by spaces)
     string nextWord;
-    for (unsigned int n = 0; n < 5; n++) {
+    for (unsigned int n = 0; n < 7; n++) {
         inputStream >> nextWord;
     }
     string subjectArea;
@@ -41,12 +41,14 @@ int main()
     cout << "Subject Area is " << subjectArea << endl;
 
     int code;
-
+    string 
     //TO DO: 
     // Now find the module ID number
     // Store it in the integer variable code
     // Calculate the next value (code + 1)
     // Write out the new module string (correct answer is COMP1001).
+
+
 
     // (iii) Close
     inputStream.close();

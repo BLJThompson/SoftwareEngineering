@@ -18,8 +18,8 @@ int main()
 	}
 
 	//The following code is unchanged, except we use a different stream object
-	for (unsigned int r = 2; r <= 12; r++) {
-		for (unsigned int c = 2; c <= 12; c++) {
+	for (unsigned int r = 1; r <= 12; r++) {
+		for (unsigned int c = 1; c <= 12; c++) {
 			op << r * c << "\t";
 		}
 		op << endl;
